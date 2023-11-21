@@ -1,0 +1,228 @@
+.getReg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .container-progressx {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    h6 {
+      color: #fff;
+    }
+    .progress-wrapper {
+      margin: 10px 0px;
+      height: 10px;
+      background: #fff;
+      width: 60%;
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      .progress {
+        height: 100%;
+        background: #000;
+      }
+    }
+  }
+  p {
+    color: #fff;
+  }
+}
+
+.button-x {
+  padding: 30px 20px;
+  button {
+    background: unset;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+
+.register-body {
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  
+  .isError {
+    font-size: 10px;
+    background: rgba(0,0,0,0.1);
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 5px 0px;
+    color: red;
+  }
+  .email {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 5px;
+    margin: 5px 0px;
+    align-items: center;
+    background: rgba(0,0,0,0.1);
+    border-radius: 30px;
+    height: 3vh;
+    input {
+      background: unset;
+      border: none;
+      width: 100%;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  
+  .password {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 5px;
+    margin: 5px 0px;
+    align-items: center;
+    background: rgba(0,0,0,0.1);
+    border-radius: 30px;
+    height: 3vh;
+    input {
+      background: unset;
+      border: none;
+      width: 100%;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  
+  .nisn {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 5px;
+    margin: 5px 0px;
+    align-items: center;
+    background: rgba(0,0,0,0.1);
+    border-radius: 30px;
+    height: 3vh;
+    input {
+      background: unset;
+      border: none;
+      width: 100%;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  
+  .tel {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: 5px 0px;
+    gap: 5px;
+    align-items: center;
+    background: rgba(0,0,0,0.1);
+    border-radius: 30px;
+    height: 3vh;
+    input {
+      background: unset;
+      border: none;
+      width: 100%;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  
+  .name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    margin-top: 20px;
+    input {
+      background: rgba(0,0,0,0.1);
+      border: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+      text-align: center;
+      width: 100%;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  
+  .mecon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  .me {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  }
+  
+  
+  .pfp {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  .upload-foto {
+    background: rgba(0,0,0,0.1);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input {
+      display: none;
+    }
+    label {
+      text-align: center;
+      font-size: 10px;
+    }
+  }
+  
+  }
+  
+  
+  button {
+    padding: 15px;
+    background: unset;
+    border: 1.5px solid #000;
+    margin-top: 5vh;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: .2 ease-in-out;
+    &:hover {
+      background: #000;
+      color: #fff;
+    }
+  }
+  
+  .sudah-akun {
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    gap: 5px;
+  }
+}
+
