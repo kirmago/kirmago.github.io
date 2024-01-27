@@ -136,6 +136,25 @@ nav {
 }
 
 @media screen and (min-width: 1024px) {
+    nav {
+        padding: 20px 20vw;
+        .navbar-right {
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                list-style: none;
+                li {
+                    padding: 5px 20px;
+                    border-radius: 20px;
+                    &:hover {
+                        background-color: #000;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* For Tablet View */
