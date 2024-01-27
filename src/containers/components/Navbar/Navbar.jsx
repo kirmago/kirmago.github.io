@@ -65,19 +65,20 @@ const Navbar = ({ setNavbarClicked, navbarClicked, darkMode, setDarkMode }) => {
                         <li>alumni</li>
                         <li>dokumentasi</li>
                         <li>postingan</li>
-                        <li>
-                            <span className="material-symbols-rounded">
-                                login
-                            </span>
-                        </li>
                     </ul>
                     <span
                         onClick={() => setNavbarClicked((prev) => !prev)}
-                        className="material-symbols-rounded"
+                        className="burger material-symbols-rounded"
                         style={{ color: `${darkMode ? "#fff" : "#000"}` }}
                     >
                         {navbarClicked ? "close" : "menu"}
                     </span>
+                    <div className="search-bar">
+                        <span className="search material-symbols-rounded">
+                            search
+                        </span>
+                        <input type="text" placeholder="cari" />
+                    </div>
                 </div>
             </nav>
             {navbarClicked && (
