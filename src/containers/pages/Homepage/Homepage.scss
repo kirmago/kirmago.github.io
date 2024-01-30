@@ -19,7 +19,7 @@ $tagp: rgba(0, 0, 0, 0.7);
         #title {
             font-size: 2em;
             text-transform: capitalize;
-            font-weight: 800;
+            font-weight: 600;
         }
 
         #subtitle {
@@ -285,9 +285,22 @@ $tagp: rgba(0, 0, 0, 0.7);
     .container-home {
         padding: 10px 20vw;
     }
-    .container-home-content-chd {
+
+    .container-home-hero {
+        #title {
+            width: 70%;
+        }
+    }
+
+    .home-content {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        .container-home-content-chd {
+            display: flex;
+            align-items: center;
+            width: 28vw;
+        }
     }
 }
 
