@@ -162,8 +162,7 @@ nav {
                     border-radius: 20px;
                     font-size: 14px;
                     &:hover {
-                        background-color: #000;
-                        color: #fff;
+                        background-color: rgba(0, 0, 0, 0.1);
                     }
                 }
             }
@@ -171,7 +170,7 @@ nav {
                 display: flex;
                 align-items: center;
                 background: rgba(0, 0, 0, 0.1);
-                padding: 5px 10px;
+                padding: 3px 10px;
                 margin: 0px 10px;
                 border-radius: 50px;
                 .search {
