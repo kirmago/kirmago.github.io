@@ -38,8 +38,8 @@ const Homepage = ({ setIsDarkMode, isDarkMode }) => {
             contentTitle: "Prestasi",
             contentDescription: "Prestasi anak KIRMAGO",
             contentThumbnail: {
-                url: "https://telegra.ph/file/ce6a364ccd73b2f7a2778.jpg",
-                title: "hendra dwi permana pemenang untag",
+                url: "https://telegra.ph/file/6adc3d2baee3aeef92130.jpg",
+                title: "Deira cahya memenangkan kompetisi essay",
             },
         },
         {
@@ -116,10 +116,11 @@ const Homepage = ({ setIsDarkMode, isDarkMode }) => {
                             <p>Tentang hal lainya di</p>
                             <h2>Kirmago website</h2>
                             <div className="home-content">
-                                {listedContent.map((data) => {
+                                {listedContent.map((data, index) => {
                                     return (
                                         <>
                                             <motion.div
+                                                key={index}
                                                 whileHover={{ scale: 1.02 }}
                                                 className="container-home-content-chd"
                                             >
