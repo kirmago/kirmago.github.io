@@ -45,6 +45,14 @@ nav {
         align-items: center;
         user-select: none;
         cursor: pointer;
+        ul {
+            display: none;
+        }
+
+        .search-bar {
+            display: none;
+        }
+
         span {
             font-size: 2em;
             /*outline: 1.5px solid #000;*/
@@ -152,7 +160,7 @@ nav {
                     text-transform: capitalize;
                     transition: 0.3s ease-in-out;
                     border-radius: 20px;
-
+                    font-size: 14px;
                     &:hover {
                         background-color: #000;
                         color: #fff;

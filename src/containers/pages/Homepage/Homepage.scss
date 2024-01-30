@@ -285,6 +285,10 @@ $tagp: rgba(0, 0, 0, 0.7);
     .container-home {
         padding: 10px 20vw;
     }
+    .container-home-content-chd {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 /* For Tablet View */
