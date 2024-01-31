@@ -14,8 +14,8 @@ const Homepage = ({ setIsDarkMode, isDarkMode }) => {
 
     const [modalOpen, setModalOpen] = useState(false);
 
-    const close = () => setModalOpen(false);
-    const open = () => setModalOpen(true);
+    const closeKet = () => setModalOpen(false);
+    const openKet = () => setModalOpen(true);
 
     const scrollToElement = () => {
         infomin.current.scrollIntoView({ behavior: "smooth" });
@@ -105,10 +105,18 @@ const Homepage = ({ setIsDarkMode, isDarkMode }) => {
                                     </div>
                                     <div className="intr-right">
                                         <ul>
-                                            <li>Apa sih kirmago itu?</li>
-                                            <li>Divisi kirmago?</li>
-                                            <li>Peran kirmago?</li>
-                                            <li>Green House kirmago?</li>
+                                            <li onClick={openKet}>
+                                                Apa sih kirmago itu?
+                                            </li>
+                                            <li onClick={openKet}>
+                                                Divisi kirmago?
+                                            </li>
+                                            <li onClick={openKet}>
+                                                Peran kirmago?
+                                            </li>
+                                            <li onClick={openKet}>
+                                                Green House kirmago?
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -178,7 +186,7 @@ const Homepage = ({ setIsDarkMode, isDarkMode }) => {
                     <AnimatePresence>
                         {modalOpen && (
                             <Modal
-                                handleClose={close}
+                                handleClose={closeKet}
                                 text="Hello, I'm a modal!"
                             />
                         )}

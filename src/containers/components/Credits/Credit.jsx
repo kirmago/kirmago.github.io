@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Credit.scss";
 const Credit = () => {
     return (
         <div className="container-home-credit">
