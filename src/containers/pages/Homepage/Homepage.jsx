@@ -96,8 +96,8 @@ const Homepage = ({ setIsDarkMode, isDarkMode }) => {
                         </div>
 
                         <div className="container-home-content">
-                            <p>Tentang hal lainya di</p>
-                            <h2>Kirmago website</h2>
+                            <p>Tentang kirmago</p>
+                            <h2>Questions And Answer</h2>
                             <div className="intro-content">
                                 <div className="intr-container-content">
                                     <div className="intr-left">

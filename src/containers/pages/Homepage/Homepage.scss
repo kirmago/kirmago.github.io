@@ -274,9 +274,13 @@ $tagp: rgba(0, 0, 0, 0.7);
             overflow: hidden;
             .intr-container-content {
                 display: flex;
+                background: url("https://telegra.ph/file/3393b42242e6aeeeff16e.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 100%;
                 height: 100%;
                 .intr-left {
-                    background-color: rgba(0, 0, 0, 0.1);
+                    backdrop-filter: blur(5px) brightness(30%);
                     flex: 1;
                     display: flex;
                     justify-content: center;
@@ -289,6 +293,7 @@ $tagp: rgba(0, 0, 0, 0.7);
                 }
                 .intr-right {
                     flex: 2;
+                    backdrop-filter: brightness(30%);
                 }
             }
         }
