@@ -4,15 +4,18 @@ import { useNavigate, Link } from "react-router-dom";
 import logo from "../../../assets/logo/logo.png";
 import React, { useState, useEffect, useRef } from "react";
 import Navbar from "../../components/Navbar/Navbar";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Credit from "./../../components/Credits/Credit";
 
 const Homepage = ({ setIsDarkMode, isDarkMode }) => {
     const navigate = useNavigate();
     const [navClick, setNavClick] = useState(false);
-    const [moreContents, setMoreContents] = useState(false);
-    const [moreContents2, setMoreContents2] = useState(false);
     const infomin = useRef(null);
+
+    const [modalOpen, setModalOpen] = useState(false);
+
+    const close = () => setModalOpen(false);
+    const open = () => setModalOpen(true);
 
     const scrollToElement = () => {
         infomin.current.scrollIntoView({ behavior: "smooth" });
@@ -84,36 +87,16 @@ const Homepage = ({ setIsDarkMode, isDarkMode }) => {
                                 penelitian dan dokumentasi.
                             </p>
                             <div className="container-home-hero-button">
-                                <button onClick={scrollToElement}>
-                                    Cari tahu
-                                </button>
                                 <button
-                                    onClick={() => navigate("/informasi")}
-                                    style={{
-                                        color: `${
-                                            isDarkMode ? "#fff" : "#000"
-                                        }`,
-                                        border: `${
-                                            isDarkMode
-                                                ? "1.5px solid #fff"
-                                                : "1.5px solid #000"
-                                        }`,
-                                    }}
+                                    onClick={() => navigate("/daftar-kirmago")}
                                 >
-                                    Informasi Kirmago
+                                    Mendaftar menjadi anggota kirmago
                                 </button>
                             </div>
                         </div>
                         <div className="container-home-content">
-                            <div className="intro-content"></div>
-                            <button
-                                className={`daftar-button ${
-                                    isDarkMode ? "darkm" : ""
-                                }`}
-                                onClick={() => navigate("/daftar-kirmago")}
-                            >
-                                Mendaftar menjadi anggota kirmago
-                            </button>
+                            <div className="intro-content">div.</div>
+
                             <p>Tentang hal lainya di</p>
                             <h2>Kirmago website</h2>
                             <div className="home-content">
@@ -122,7 +105,11 @@ const Homepage = ({ setIsDarkMode, isDarkMode }) => {
                                         <>
                                             <motion.div
                                                 key={index}
-                                                whileHover={{ scale: 1.02 }}
+                                                whileHover={{
+                                                    scale: 1.02,
+                                                    boxShadow:
+                                                        "0px 0px 20px 5px rgba(0, 0, 0, 0.3)",
+                                                }}
                                                 className="container-home-content-chd"
                                             >
                                                 <div className="wrapper-content-bg">
@@ -170,6 +157,15 @@ const Homepage = ({ setIsDarkMode, isDarkMode }) => {
                         </div>
                     </div>
                     <Credit />
+
+                    <AnimatePresence>
+                        {modalOpen && (
+                            <Modal
+                                handleClose={close}
+                                text="Hello, I'm a modal!"
+                            />
+                        )}
+                    </AnimatePresence>
                 </>
             ) : (
                 ""
@@ -179,6 +175,53 @@ const Homepage = ({ setIsDarkMode, isDarkMode }) => {
 };
 
 export default Homepage;
+
+const Backdrop = ({ children, onClick }) => {
+    return (
+        <motion.div
+            onClick={onClick}
+            className="backdrop"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+        >
+            <div className="modal-container">{children}</div>
+        </motion.div>
+    );
+};
+
+const dropIn = {
+    hidden: {
+        opacity: 0,
+    },
+    visible: {
+        opacity: 1,
+        transition: {
+            duration: 0.1,
+        },
+    },
+    exit: {
+        opacity: 0,
+    },
+};
+
+const Modal = ({ handleClose, text }) => {
+    return (
+        <Backdrop onClick={handleClose}>
+            <motion.div
+                onClick={(e) => e.stopPropagation()}
+                className="modal orange-gradient"
+                variants={dropIn}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+            >
+                <p>{text}</p>
+                <button onClick={handleClose}>Close</button>
+            </motion.div>
+        </Backdrop>
+    );
+};
 
 {
     /* </li>
