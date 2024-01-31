@@ -94,8 +94,18 @@ const Homepage = ({ setIsDarkMode, isDarkMode }) => {
                                 </button>
                             </div>
                         </div>
+
                         <div className="container-home-content">
-                            <div className="intro-content">div.</div>
+                            <p>Tentang hal lainya di</p>
+                            <h2>Kirmago website</h2>
+                            <div className="intro-content">
+                                <div className="intr-container-content">
+                                    <div className="intr-left">
+                                        <img src={logo} alt="logo kirmago" />
+                                    </div>
+                                    <div className="intr-right">a</div>
+                                </div>
+                            </div>
 
                             <p>Tentang hal lainya di</p>
                             <h2>Kirmago website</h2>

@@ -47,8 +47,6 @@ $tagp: rgba(0, 0, 0, 0.7);
     }
 
     .container-home-content {
-        margin: 40px 0px;
-        margin-top: 80px;
         .daftar-button {
             padding: 10px 30px;
             border: 1.5px solid #000;
@@ -261,6 +259,36 @@ $tagp: rgba(0, 0, 0, 0.7);
                     background-color: #000;
                     color: #fff;
                     box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+    }
+
+    .container-home-content {
+        margin: 20px 0px;
+        .intro-content {
+            background-color: rgba(0, 0, 0, 0.1);
+            margin: 20px 0px;
+            border-radius: 20px;
+            height: 40vh;
+            overflow: hidden;
+            .intr-container-content {
+                display: flex;
+                height: 100%;
+                .intr-left {
+                    background-color: rgba(0, 0, 0, 0.1);
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        width: 40%;
+                        height: 40%;
+                        object-fit: cover;
+                    }
+                }
+                .intr-right {
+                    flex: 2;
                 }
             }
         }
