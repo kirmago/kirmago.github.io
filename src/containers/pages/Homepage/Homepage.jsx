@@ -103,7 +103,14 @@ const Homepage = ({ setIsDarkMode, isDarkMode }) => {
                                     <div className="intr-left">
                                         <img src={logo} alt="logo kirmago" />
                                     </div>
-                                    <div className="intr-right">a</div>
+                                    <div className="intr-right">
+                                        <ul>
+                                            <li>Apa sih kirmago itu?</li>
+                                            <li>Divisi kirmago?</li>
+                                            <li>Peran kirmago?</li>
+                                            <li>Green House kirmago?</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
 
