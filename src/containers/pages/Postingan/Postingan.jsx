@@ -15,6 +15,7 @@ import { useSelector } from "react-redux";
 import { useNavigate, Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import Loading from "../../components/Loading/Loading";
+import Credit from "./../../components/Credits/Credit";
 
 const Postingan = ({ setIsDarkMode, isDarkMode }) => {
     const { user, isError, isLoading, isSuccess, message } = useSelector(
@@ -411,6 +412,7 @@ const Postingan = ({ setIsDarkMode, isDarkMode }) => {
             ) : (
                 ""
             )}
+            <Credit />
         </>
     );
 };

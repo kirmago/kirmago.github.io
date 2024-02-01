@@ -6,20 +6,20 @@ const Credit = () => {
         <div className="container-home-credit">
             <div className="propow-up">
                 <div className="developer">
-                    <h2>Developer</h2>
+                    <h4>Developer</h4>
                     <div className="ig">
                         <i className="fa-brands fa-instagram"></i>
                         <Link to="https://instagram.com/chromesavior">
-                            @Chromesavior/Ridho
+                            @itskindahaunted
                         </Link>
                     </div>
                     <div className="git">
                         <i className="fa-brands fa-github"></i>
-                        <Link to="https://github.com/7ryznxx">@7ryznxx</Link>
+                        <Link to="https://github.com/7ryznxx">7ryznxx</Link>
                     </div>
                 </div>
                 <div className="copyright">
-                    <h2>Copyright</h2>
+                    <h4>Copyright</h4>
                     <div className="mas">
                         <i className="fa fa-copyright"></i>
                         <Link to="/kirmago-social">Kirmago 2023</Link>
@@ -27,7 +27,7 @@ const Credit = () => {
                 </div>
             </div>
             <div className="propow-down">
-                <h2>Project Powered</h2>
+                <h4>Project Powered</h4>
                 <div className="masx">
                     <i className="fa-brands fa-github"></i>
                     <Link to="https://pages.github.com/">github pages</Link>
