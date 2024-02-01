@@ -51,9 +51,17 @@ const CekPostingan = ({ setIsDarkMode, isDarkMode }) => {
                     />
                 );
             case "subjudul":
-                return <h4 key={value}>{value}</h4>;
+                return (
+                    <h4 key={value} style={{ color: "rgba(0,0,0,0.9)" }}>
+                        {value}
+                    </h4>
+                );
             case "paragraf":
-                return <p key={value}>{value}</p>;
+                return (
+                    <p key={value} style={{ color: "rgba(0,0,0,0.6)" }}>
+                        {value}
+                    </p>
+                );
             default:
                 return null;
         }

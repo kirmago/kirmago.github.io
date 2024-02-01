@@ -2,16 +2,19 @@
     padding: 30px 20px;
 
     .rendered-cek-postingan {
+        user-select: none;
         h1 {
             margin-bottom: 20px;
         }
 
         p {
             margin-bottom: 20px;
+            color: rgba(0, 0, 0, 0.7);
         }
 
         h4 {
             margin-bottom: 20px;
+            color: rgba(0, 0, 0, 0.8);
         }
 
         .single-img {
@@ -34,6 +37,7 @@
         justify-content: flex-end;
         padding: 10px;
         .likeds {
+            cursor: pointer;
             display: flex;
             align-items: center;
             gap: 5px;
@@ -61,6 +65,16 @@
 @media screen and (min-width: 1024px) {
     .cek-postingan-container {
         padding: 20px 20vw;
+        .rendered-cek-postingan {
+            .single-img {
+                object-fit: cover;
+                width: 100%;
+                height: 50vh;
+                border-radius: 20px;
+                filter: brightness(70%);
+                margin-bottom: 20px;
+            }
+        }
     }
     .marginable {
         padding: 20px 20vw;
