@@ -156,13 +156,26 @@ nav {
                 gap: 5px;
                 list-style: none;
                 li {
-                    padding: 10px 20px;
-                    text-transform: capitalize;
-                    transition: 0.3s ease-in-out;
-                    border-radius: 20px;
-                    font-size: 14px;
-                    &:hover {
-                        background-color: rgba(0, 0, 0, 0.1);
+                    .kls {
+                        padding: 10px 20px;
+                        text-transform: capitalize;
+                        transition: 0.3s ease-in-out;
+                        border-radius: 20px;
+                        font-size: 14px;
+                        text-decoration: none;
+                        color: #000;
+                        &:hover {
+                            background-color: rgba(0, 0, 0, 0.1);
+                        }
+
+                        #kirs {
+                            color: #fff;
+                            background-color: rgba(0, 0, 0, 1);
+                            &:hover {
+                                background-color: rgba(0, 0, 0, 0.1);
+                                color: #000;
+                            }
+                        }
                     }
                 }
             }

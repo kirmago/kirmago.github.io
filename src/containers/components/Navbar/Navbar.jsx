@@ -61,10 +61,31 @@ const Navbar = ({ setNavbarClicked, navbarClicked, darkMode, setDarkMode }) => {
                 </div>
                 <div className="navbar-right">
                     <ul>
-                        <li>tentang</li>
-                        <li>alumni</li>
-                        <li>dokumentasi</li>
-                        <li>postingan</li>
+                        <li>
+                            <Link className="kls" to="/">
+                                beranda
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className="kls" to="/alumni">
+                                Alumni
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className="kls" to="/dokumentasi">
+                                Dokumentasi
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className="kls" to="/postingan">
+                                Postingan
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className="kls" to="/daftar-kirmago">
+                                mendaftar KIR
+                            </Link>
+                        </li>
                     </ul>
                     <span
                         onClick={() => setNavbarClicked((prev) => !prev)}

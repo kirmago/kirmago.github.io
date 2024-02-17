@@ -9,13 +9,13 @@ const Credit = () => {
                     <h4>Developer</h4>
                     <div className="ig">
                         <i className="fa-brands fa-instagram"></i>
-                        <Link to="https://instagram.com/chromesavior">
+                        <Link to="https://instagram.com/itskindahaunted">
                             @itskindahaunted
                         </Link>
                     </div>
                     <div className="git">
                         <i className="fa-brands fa-github"></i>
-                        <Link to="https://github.com/7ryznxx">7ryznxx</Link>
+                        <Link to="https://github.com/ryznxx">ryznxx</Link>
                     </div>
                 </div>
                 <div className="copyright">
